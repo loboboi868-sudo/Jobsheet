@@ -1,0 +1,20 @@
+ //Membuat karakter baru
+            Characteredemo.Player player1 = new Characteredemo.Player();
+            //Mengatur atribut karakter
+            player1.CharacterId = "P001";
+            player1.characterName = "Arthas";
+            player1.characterClass = "Paladin";
+            player1.health = 100;
+            player1.level = 1;
+            //memanggil method Start untuk memulai petualangan
+            player1.Start();
+            player1.TakeDmg(30);
+            player1.Heal(10);
+            //membaca status karakter
+            player1.DisplayStatus();
+            Console.ReadKey();
+
+public character(int InitialLvl);
+    {
+        level = InitialLvl
+    }
